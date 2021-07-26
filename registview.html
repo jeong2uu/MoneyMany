@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ECF6FA;
+    display: flex;
+}
+#main_left{
+    flex : 25%;
+    background : #3CA4F1;
+}
+#main_right{
+    flex : 75%;
+}
+
+h1{
+    margin-left:30%;
+    color:#3CA4F1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size:300%;
+}
+
+#main_right table{
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+}
+
+th {
+    color: #3CA4F1;
+    font-size: 16px;
+}
+
+input[type = "text"], input[type = "password"], button {
+    border: 0;
+    background:#ECF6FA;
+    display: inline;
+   margin: 20px auto;  
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;  
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+input[type = "text"]:focus, input[type = "password"]:focus , button:focus {
+    width: 300px;
+    border-color: white;
+}
+input[type = "submit"]{
+    border: 0;
+    background: #ECF6FA;
+    display: block;
+    margin: 23px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: #3CA4F1;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+ input[type = "submit"]:hover{
+    background: #3CA4F1;
+       color: white;
+}
+
+  p{
+  display:inline;
+  }
+  
+.colll th{
+    text-align: left;
+}
+  </style>
+}
+}
+</head>
+<body>
+<section id = "main_left">
+<img alt="" src=""/>
+</section>
+<section id = "main_right">
+    <h1>money many</h1><br>
+
+    <table class="tableview">
+        <!--/*닉네임 이름*/-->
+         <tr>
+            <th>이름</th>
+            <td colspan = "1"><input type="text" id="FirstName" class ="lside" placeholder="FirstName" style=""></td>
+            <td colspan = "1"><input type="text" id="LastName" class ="lside" placeholder="LastName" ></td>
+            <th>닉네임(별명)</th>
+            <td><input type="text" id="NickName" class ="rside" placeholder="NickName" style="" ></td>
+        </tr>
+        <!--/*ID 생년월일*/-->
+        <tr>
+            <th>ID</th>
+            <td> <input type="text" id="UserId" class ="rside" placeholder="UserID" style="" ></td>
+            <td></td>
+            <th>생년월일</th>
+            <td><input type="text" id="Birthday"class ="lside" placeholder="생년월일(YYMMDD)" style=";" ></td>
+        </tr>
+        <!--/*비밀번호 성별*/-->
+        <tr>
+            <th>비밀번호</th>
+            <td><input type="password" id="Password"class ="rside" placeholder="Password" style="" ></td>
+            <td></td>
+            <th>성별</th>
+            <td> <input type="radio" id="sex-1" name="sex"  value="1" checked style="">
+         <label class ="lside" for="sex-1">남</label></td>
+            <td> <input type="radio" class="custom-control-input" id="sex-2" name="sex" value="2" checked  >
+         <label class ="lside" for="sex-2" >여</label></td>
+        </tr>
+        <!--/*비밀번호확인 전화번*/-->
+        <th>비밀번호확인</th>
+        <td><input type="password" id="PasswordCheck"class ="rside" placeholder="PasswordCheck"  style=""></td>
+        <td></td>
+        <th>전화번호</th>
+        <td> <input type="text" id="PhoneNumber" class ="lside" placeholder="전화번호(-생략)" autocomplete="off" style=""/></td>
+        <!--/*카..드등록,,/? 이메일*/-->
+        <tr>
+            <th>이메일</th>
+            <td colspan="3"><input type="text" id="email" class ="lside" placeholder="이메일" autocomplete="off" style="" ></td>
+        </tr>
+
+
+    </table>
+    <table class = "colll">
+
+        <tr><th>이름</th><th></th><th>닉네임(별명)</th></tr>
+<tr><td ><input type="text" id="FirstName" class ="lside" placeholder="FirstName" style=""></td>
+    <td><input type="text" id="LastName" class ="lside" placeholder="LastName" ></td>
+    <td><input type="text" id="NickName" class ="rside" placeholder="NickName" style="" ></td></tr>
+
+<tr><th>ID</th><th></th><th>생년월일</th></tr>
+<tr><td> <input type="text" id="UserId" class ="rside" placeholder="UserID" style="" ></td>
+    <td></td>
+    <td><input type="text" id="Birthday"class ="lside" placeholder="생년월일(YYMMDD)" style="" ></td></tr>
+
+<tr><th>비밀번호</th><th></th><th>성별</th></tr>
+<tr><td><input type="password" id="Password"class ="rside" placeholder="Password" style="" ></td>
+    <td></td>
+    <td><input type="radio" id="sex-1" name="sex"  value="1" checked style="">
+         <label class ="lside" for="sex-1">남</label>
+         <input type="radio" class="custom-control-input" id="sex-2" name="sex" value="2" checked  >
+         <label class ="lside" for="sex-2" >여</label></td></tr>
+
+<tr><th>비밀번호확인</th><th></th><th>전화번호</th></tr>
+<tr><td><input type="password" id="PasswordCheck"class ="rside" placeholder="PasswordCheck"  style=""></td>
+    <td></td>
+    <td><input type="text" id="PhoneNumber" class ="lside" placeholder="전화번호(-생략)" autocomplete="off" style=""/></td></tr>
+
+
+<tr><th>이메일</th><th></th><th></th></tr>
+<tr><td><input type="text" id="email" class ="lside" placeholder="이메일" autocomplete="off" style="" ></td></tr>
+
+    </table>
+    </section>
+</body>
+</html>
